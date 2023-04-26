@@ -1,5 +1,3 @@
-
-
 def study_schedule(permanence_period, target_time) -> int:
     if target_time is None or type(target_time) != int:
         return None
