@@ -3,7 +3,7 @@ def study_schedule(permanence_period, target_time) -> int:
     for start, end in permanence_period:
         if start is None or end is None or target_time is None:
             return None
-        if type(start) != int or type(end) != int or type(target_time) != int:
+        if type(start) != int or type(end) != int:
             return None
         if start <= target_time <= end:
             count += 1
